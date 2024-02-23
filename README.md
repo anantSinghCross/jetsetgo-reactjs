@@ -1,0 +1,2 @@
+# jetsetgo-reactjs
+Propacity assignment
