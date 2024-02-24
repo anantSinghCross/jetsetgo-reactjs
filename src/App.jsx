@@ -1,6 +1,5 @@
 import React, { Fragment, useEffect } from 'react'
 import './index.css'
-import { useState } from 'react'
 import LinearProgress from '@mui/joy/LinearProgress';
 import Header from './components/Header';
 import FlightCard from './components/FlightCard';

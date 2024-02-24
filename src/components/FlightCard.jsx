@@ -6,6 +6,7 @@ export default function FlightCard({ details }) {
     const arrTime = new Date(destination.arrTime);
     const depAirport = `${source.airport.airportName}, ${source.airport.cityName}, ${source.airport.countryName}`;
     const arrAirport = `${destination.airport.airportName}, ${destination.airport.cityName}, ${destination.airport.countryName}`;
+    
     return (
         <div className="flight-card">
             <div className="card-detail flight-airline">
