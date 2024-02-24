@@ -11,7 +11,7 @@ import { useSortOrder } from './hooks/useSortOrder';
 
 export default function App() {
   const { flights, loading, airlineFilters, toggleAirlineFilter } = useFlightData();
-  const { sortOrder, toggleSortOrder } = useSortOrder()
+  const { sortOrder, toggleSortOrder } = useSortOrder();
 
   const filteredFlights = !loading ? flights.filter((flight) => {
     const flightFilter = airlineFilters.find(filter => filter.airlineName === flight.displayData.airlines[0].airlineName);
@@ -22,12 +22,12 @@ export default function App() {
 
   const flightList = !loading ? filteredFlights.map(flight => {
     return <FlightCard key={flight.id} details={flight} />
-  }) : <LinearProgress variant="soft" />;
+  }) : null;
 
   return (
     <Fragment>
       <Header />
-      <div className="main-container">
+      {loading? <LinearProgress variant="soft" /> : <div className="main-container">
         <FilterController
           airlineFilters={airlineFilters}
           toggleAirlineFilter={toggleAirlineFilter}
@@ -36,7 +36,8 @@ export default function App() {
         <div className="flight-container">
           {flightList}
         </div>
-      </div>
+      </div> }
+      
     </Fragment>
   )
 }
