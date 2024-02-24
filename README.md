@@ -1,8 +1,8 @@
 # Jet Set Go! ✈️
 
-## Overview
-
 A sleek React JS app JetSetGo, simplifying flight bookings.
+
+## Overview
 
 (Users are able to filter the results by *airlines*. Users are able to sort the results by *price*)
 
