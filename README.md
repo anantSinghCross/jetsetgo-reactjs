@@ -1,6 +1,6 @@
 # Jet Set Go! ✈️
 
-## Overview:
+## Overview
 
 A sleek React JS app JetSetGo, simplifying flight bookings.
 
